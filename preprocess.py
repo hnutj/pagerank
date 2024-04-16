@@ -32,7 +32,7 @@ with open("Data_processed.txt","x") as processedata_file:
         left=1
         right=1+blocksize
         blocks=list()
-        while right<maxvalue:
+        while left<maxvalue:
             for entry in node2edges_sortedlist:
                 include_nodes=list()
                 for node_str in entry[1]:
@@ -50,7 +50,7 @@ with open("Data_processed.txt","x") as processedata_file:
             left+=blocksize
             right+=blocksize
             blocks=list()
-
+    
             
             
 
